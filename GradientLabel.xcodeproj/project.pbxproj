@@ -15,6 +15,7 @@
 		EAE043FA204FD088005AB753 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAE043F8204FD088005AB753 /* LaunchScreen.storyboard */; };
 		EAE043FF204FD0AC005AB753 /* GradientLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE043E1204FD06F005AB753 /* GradientLabel.framework */; };
 		EAE04400204FD0AC005AB753 /* GradientLabel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAE043E1204FD06F005AB753 /* GradientLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EAE04405204FD18C005AB753 /* GradientLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE04404204FD18C005AB753 /* GradientLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		EAE043F6204FD088005AB753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAE043F9204FD088005AB753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAE043FB204FD088005AB753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAE04404204FD18C005AB753 /* GradientLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				EAE043E3204FD06F005AB753 /* GradientLabel.h */,
+				EAE04404204FD18C005AB753 /* GradientLabel.swift */,
 				EAE043E4204FD06F005AB753 /* Info.plist */,
 			);
 			path = GradientLabel;
@@ -176,6 +179,7 @@
 				TargetAttributes = {
 					EAE043E0204FD06F005AB753 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					EAE043EC204FD088005AB753 = {
@@ -228,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE04405204FD18C005AB753 /* GradientLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +385,7 @@
 		EAE043E7204FD06F005AB753 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -394,6 +400,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.dnpp.GradientLabel;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -404,6 +411,7 @@
 		EAE043E8204FD06F005AB753 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -428,6 +436,7 @@
 		EAE043FD204FD088005AB753 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XM25R8KKX;
@@ -443,6 +452,7 @@
 		EAE043FE204FD088005AB753 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XM25R8KKX;
