@@ -13,7 +13,15 @@ GradientLabel
 - Realtime previewing InterfaceBuilder with `@IBDesignable` and `@IBInspectable`
 
 
-## Sample
+## Demo
+
+
+### InterfaceBuilder
+
+![InterfaceBuilder](img/IB.png "InterfaceBuilder")
+
+
+### Code
 
 ```swift
 DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
@@ -30,4 +38,6 @@ DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
 }
 ```
 
-![Demo](demo.gif "Demo")
+### Results
+
+![Demo](img/demo.gif "Demo")
